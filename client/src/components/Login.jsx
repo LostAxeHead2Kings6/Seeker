@@ -20,7 +20,8 @@ export default class Login extends React.Component{
 						  icon='user'
 						  iconPosition='left'
 						  value={this.state.userEmail}
-						  onChange={(e)=>this.setState({userEmail: e.target.value})}/>
+						  onChange={(e)=>this.setState({userEmail: e.target.value})}
+						/>
 					</Form.Field>
 					<Form.Field>
 						<Input
@@ -29,7 +30,8 @@ export default class Login extends React.Component{
 						  iconPosition='left'
 						  placeholder='Password'
 						  value={this.state.password}
-						  onChange={(e)=>this.setState({password: e.target.value})}/>
+						  onChange={(e)=>this.setState({password: e.target.value})}
+						/>
 					</Form.Field>
 					<Button className="login-bttn" type="submit" onClick={() => {
 						this.props.handleClick(this.state.userEmail, this.state.password);

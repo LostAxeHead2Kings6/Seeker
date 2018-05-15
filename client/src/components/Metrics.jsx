@@ -4,6 +4,8 @@ import C3Chart from 'react-c3js';
 import ProgressView from './ProgressView.jsx';
 import StatusView from './StatusView.jsx';
 
+//Data Visualization that surmises User Application statuses
+
 export default class Metrics extends React.Component{
 	constructor(props) {
 		super(props)
@@ -192,11 +194,11 @@ export default class Metrics extends React.Component{
 										We suggest you practice the skills involved in this step.
 									</List.Item>
 									<br/>
-									{this.compareActivity() ? 
+									{this.compareActivity() ?
 										<List.Item>
 											Your activity on the last day you submitted new applications was above average.
 											Keep up the great work!
-										</List.Item> 
+										</List.Item>
 									:
 										<List.Item>
 											Your activity on the last day you submitted new applications was below average.

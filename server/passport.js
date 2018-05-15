@@ -1,18 +1,18 @@
-const passport = require('passport')
-const GoogleStrategy = require('passport-google-oauth20')
-const config = require('../configurations.js')
-const db = require('../database/index.js')
+const passport = require('passport');
+const GoogleStrategy = require('passport-google-oauth20');
+const config = require('../configurations.js');
+const db = require('../database/index.js');
 
 passport.serializeUser((user, done) => {
   done(null, user.id)
-})
+});
 
 passport.deserializeUser((id, done) => {
   db.getUser(id, function(err, results) {
     if (err) console.error(err)
     done(err, results[0])
   })
-})
+});
 
 passport.use(
   new GoogleStrategy({
@@ -47,4 +47,4 @@ passport.use(
       }
     })
   })
-)
+);

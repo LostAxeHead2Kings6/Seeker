@@ -4,6 +4,8 @@ import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import moment from 'moment';
 
+//This is the form for entering a new application
+
 class AppModal extends React.Component {
   constructor(props) {
     super(props)
@@ -222,5 +224,3 @@ class AppModal extends React.Component {
 }
 
 export default AppModal;
-
-//the phase drop down input box should receive options from the user's customized number of status options

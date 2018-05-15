@@ -3,6 +3,8 @@ import { Button, Menu, Header, Image, Icon, Modal, Form, Segment } from 'semanti
 import DocList from './DocList.jsx';
 import axios from 'axios';
 
+//this is where users can upload & view pdf documents under their account
+
 class DocModal extends React.Component {
   constructor(props){
     super(props)

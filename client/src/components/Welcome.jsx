@@ -4,9 +4,11 @@ import { Button, Menu, Header, Segment} from 'semantic-ui-react'
 import Login from './Login.jsx'
 import Signup from './Signup.jsx'
 
+//welcome page with signup and login features
+
 export default class Welcome extends React.Component{
-    constructor(props){
-        super(props)
+  constructor(props){
+      super(props)
     this.state = {
       newUser: false
     }

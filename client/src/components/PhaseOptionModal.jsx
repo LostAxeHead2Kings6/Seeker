@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Button, Modal, Icon, Dropdown, Header } from 'semantic-ui-react'
 
+//Options to every Phase Column
 
 export default class PhaseSettingsModal extends Component {
   constructor(props){

@@ -6,7 +6,7 @@ import axios from 'axios';
 export default class ApplicationList extends React.Component{
 	constructor(props){
 		super(props)
-		this.state ={
+		this.state = {
 			showModal: false,
 			featuredItem: null,
 			apps: [...props.apps],
@@ -33,7 +33,7 @@ export default class ApplicationList extends React.Component{
 		if (this.state.searchLogicSwitch) {
 		}
 		else if (this.props.apps !== this.state.apps) {
-				this.setState({apps: this.props.apps});
+			this.setState({apps: this.props.apps});
 		}
 	}
 

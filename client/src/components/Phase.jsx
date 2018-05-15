@@ -3,6 +3,7 @@ import {Header, Card, Icon} from 'semantic-ui-react'
 import DescriptionCard2 from './details modal/DetailsModal2.jsx'
 import moment from 'moment'
 
+//Every Column on the Progress Board
 
 export default class Phase extends Component {
 	constructor(props){

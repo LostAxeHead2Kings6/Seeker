@@ -291,7 +291,15 @@ module.exports.deleteContacts = function(appId, callback) {
 
 module.exports.addReminder = function(data, callback) {
   connection.query(
-    `INSERT INTO reminders (id, user_id, app_id, user_email, job_title, company, due_date, text_desc) VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+    `INSERT INTO reminders (
+      id,
+      user_id, app_id,
+      user_email,
+      job_title,
+      company,
+      due_date,
+      text_desc)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
     [null, data.userId, data.appId, data.email, data.jobTitle, data.company, data.date, data.description],
     function(err, response) {
       callback(err, response)
@@ -301,7 +309,12 @@ module.exports.addReminder = function(data, callback) {
 
 module.exports.addNotes = function(data, callback) {
   connection.query(
-    `INSERT INTO notes (id, app_id, note_text, user_id) VALUES (?, ?, ?, ?)`,
+    `INSERT INTO notes (
+      id,
+      app_id,
+      note_text,
+      user_id)
+    VALUES (?, ?, ?, ?)`,
     [null, data.appId, data.text, data.userId],
     function(err) {
       callback(err)

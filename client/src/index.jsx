@@ -89,9 +89,7 @@ class App extends React.Component {
       this.getUserData()
     })
     .catch((err) => alert("Invalid email or password"))
-
     }
-
   }
 
   logout() {
